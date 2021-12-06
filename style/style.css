@@ -1,0 +1,140 @@
+:root {
+  --black: #1a1a1a;
+  --white: #f0e9e9;
+  --whiteK: #fdfcfc;
+  --gray: #333333;
+  --blue: #aeaef3;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.device {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-between;
+  width: 1360px;
+}
+
+.piano_setting {
+  align-content: center;
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 1000px;
+  width: 100%;
+}
+
+.speaker {
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+  border-radius: 15px;
+  width: 22vw;
+  height: 150px;
+}
+
+.piano_interface {
+  background-color: var(--gray);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 3px var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+  justify-content: center;
+  padding: 15px;
+  width: 450px;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.piano_control > label,
+.piano_control > label > input {
+  margin-right: 5px;
+}
+
+select {
+  font-size: 1rem;
+}
+
+.play {
+  font-size: 1rem;
+  margin-left: 5px;
+  width: 50px;
+}
+
+.keyboard {
+  display: flex;
+  height: 100%;
+  padding: 0 8px 8px 8px;
+  width: 100%;
+}
+
+.p_key {
+  border: 2px solid var(--black);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  flex-grow: 1;
+  height: 100%;
+  text-align: center;
+  width: 30px;
+}
+
+.key-white {
+  background-color: var(--whiteK);
+  padding-top: 180px;
+}
+
+.key-black {
+  background-color: var(--black);
+  color: var(--white);
+  height: 60%;
+  left: -15px;
+  position: absolute;
+  top: 0;
+}
+
+.empty {
+  position: relative;
+}
+
+.playing {
+  background-color: var(--blue);
+}
+
+@media screen and (max-width: 1064px) {
+  .device {
+    display: none;
+  }
+  body {
+    background-color: var(--black);
+  }
+  body::after {
+    content: 'This App is only for desktop mode (Full HD)';
+    color: var(--white);
+  }
+}

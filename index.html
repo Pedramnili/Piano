@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://api.iconify.design/icon-park/piano.svg"
+    type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Piano</title>
+</head>
+
+<body>
+    <div class="device">
+        <div class="piano_setting">
+            <div class="speaker"></div>
+            <div class="piano_interface">
+                <div class="piano_control">
+                    <h4>Piano</h4>
+                    <label><input type="radio" class="control_option" name="control" id="Letter Notes" checked>Letter
+                        Notes</label>
+                    <label><input type="radio" class="control_option" name="control" id="Keyborad">Keyborad</label>
+                    <label><input type="radio" class="control_option" name="control" id="None">None</label>
+                </div>
+                <div class="auto_play">
+                    <h4>AutoPlay</h4>
+                    <select class="list_song">
+                        <option value="jingleBells">Jingle Bells</option>
+                        <option value="happyBirthday">Happy Birthday</option>
+                        <option value="superMario">Super Mario</option>
+                        <option value="aladdin"> Aladdin</option>
+                    </select>
+                    <label>Tempo:
+                        <select class="list_tempo">
+                            <option value="3">Slow</option>
+                            <option value="2" selected>Normal</option>
+                            <option value="1">Fast</option>
+                        </select>
+                    </label>
+                    <button class="play">Play</button>
+                </div>
+            </div>
+            <div class="speaker"></div>
+        </div>
+        <div class="keyboard"></div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
